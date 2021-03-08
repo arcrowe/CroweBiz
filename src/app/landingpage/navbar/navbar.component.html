@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="">
+  <a class="navbar-brand" >
+    <img src="/assets/images/nba-winner-sticker.png" width="60" >
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          (click)="toggleNavbar()">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent"
+       [ngClass]="{'show':navbarOpen}">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item mx-2 ">
+        <a  class="nav-link  navbar-text" routerLink="/books154f" routerLinkActive="active">Books154F</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="#" class="nav-link navbar-text" routerLink="/memory" routerLinkActive="active">Memory Match</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="#" class="nav-link navbar-text" routerLink="/tictactoe" routerLinkActive="active">Tic Tac Toe</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="#" class="nav-link navbar-text" routerLink="" routerLinkActive="active">Stock Ticker</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="#" class="nav-link navbar-text" routerLink="" routerLinkActive="active">All Aboard</a>
+      </li>
+    </ul>
+  </div>
+</nav>

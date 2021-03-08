@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto&display=swap');
+/***** clears the ‘X’ from Internet Explorer *****/
+input[type=search]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/************************************************/
+
+:host, :root {
+  font-size: 16px;
+
+  --154F-light-orange: #d57d67;
+  --154F-dark-red: #a31a16;
+  --154F-light-teal: #5c746e;
+  --154F-dark-teal: #2e4a44;
+  --154F-dark-cream: #9F8F85;
+  --154F-light-cream: #c8baad;
+
+  --main-pale-armygreen: #a7bb82;
+  --main-dark-green: #37450b;
+  --main-almost-white: #f2f1d7;
+  --main-pale-yellow: #e4e59e;
+  --main-green: #6c8b48;
+  --main-dark-brown: #5b4e13;
+  --main-light-green: #cee693;
+  --main-gray-green: #bfccaa;
+  --main-tan: #8b7c47;
+  --main-olive-green: #7a8d1c;
+  --main-spring-green: #a1b549;
+
+  --cp181689-brown: #7d5a5a;
+  --cp181689-dark-pink: #f1d1d1;
+  --cp181689-pink: #f3e1e1;
+  --cp181689-light-pink: #faf2f2;
+
+  --ttt-black: #252525;
+  --ttt-bright-red: #FF0000;
+  --ttt-muted-red: #af0404;
+  --ttt-dark-gray: #414141;
+
+  --mm-dark-teal: #0d505d;
+  --mm-light-teal: #1c8996;
+  --mm-gold: #bca16a;
+  --mm-lighter-teal:#4ba7ae;
+  --mm-darkest-brown: #645957;
+
+
+}
+
+
+
+

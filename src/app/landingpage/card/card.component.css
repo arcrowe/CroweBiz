@@ -1,0 +1,13 @@
+.card {
+  width: 18rem;
+}
+
+.card-img-top {
+  height:10rem;
+}
+
+a{
+  text-decoration: none;
+  background-color: var(--main-dark-green);
+  color:var(--mm-gold);
+}

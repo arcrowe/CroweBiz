@@ -1,0 +1,37 @@
+<section class="col-span-2 pb-5 section " *ngIf = "books">
+  <div class="items-start lg:items-center flex flex-wrap">
+    <a href="#">
+      <img class="avatar-light" loading="lazy"
+           src="{{logo}}">
+    </a> <a class="booklist-title ml-3 text-left flex-1 break-words overflow-hidden mr-2"
+            href="#">{{title}}</a>
+    <a class="button primary mt-2 w-full lg:mt-0 lg:w-auto"
+       href="#" (click)="viewAll()">VIEW LIST ({{books.length}} BOOKS)</a>
+  </div>
+
+  <div class=" relative">
+    <div class="flex overflow-scroll-x" style="scroll-snap-type: x mandatory">
+      <a *ngFor="let book of books" class="cover my-4 mr-2" style="scroll-snap-align: start" href="#">
+        <div class="product-image">
+          <img style="height: 14rem" class="h-24 lg:h-48 w-auto" width="636" height="1000" src="{{book.cover}}">
+        </div>
+      </a>
+      <a class="my-4" href="#">
+        <div class="bg-primary flex items-center rounded h-full p-6 font-sans-bold text-white">
+          <h1 class="text-center w-full" (click)="viewAll()">VIEW ALL {{books.length}} BOOKS</h1>
+        </div>
+      </a>
+    </div>
+    <!--    <div-->
+    <!--      class="prev left-0 -translate-x-6 hidden lg:block outline-none cursor-pointer absolute transform -translate-y-1/2 z-40"-->
+    <!--      style="top: 50%">-->
+    <!--      <img src="/assets/fat_arrow_left.svg">-->
+    <!--    </div>-->
+    <!--    <div-->
+    <!--      class="next right-0 translate-x-6 hidden lg:block outline-none cursor-pointer absolute transform -translate-y-1/2 z-40"-->
+    <!--      style="top: 50%">-->
+    <!--      <img src="/assets/fat_arrow_right.svg">-->
+    <!--    </div>-->
+  </div>
+</section>
+

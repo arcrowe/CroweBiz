@@ -1,0 +1,64 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  gap: 16px;
+
+  justify-content: center;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 16px;
+
+  justify-content: center;
+}
+.directions{
+}
+
+.grid10 {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  gap: 16px;
+
+  justify-content: right;
+  padding-right: 225px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 150px);
+  }
+}
+.bg-container{
+  background-color: #0c3338;
+  /*background-color: var(--mm-dark-teal);*/
+
+}
+
+.banner {
+  padding-top:80px;
+  padding-bottom: 100px;
+  /*min-height: calc(100vh - 78px);*/
+  background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("/assets/images/lightbulb.jpg");
+  /*background: url("/assets/images/lightbulb.jpg");*/
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  /*background-size: cover;*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--mm-gold);
+  font-size: 1.5rem;
+  min-height: 100vh;
+  min-width: 100vw;
+  /*!*width:100vw;*!*/
+  /*!*background-color: purple;*!*/
+  position: relative;
+  font-family: 'Akaya Telivigala', cursive;
+
+}
+
+.title {
+  font-size: 3rem;
+}

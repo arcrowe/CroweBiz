@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="bg-container">
+  <div class="banner">
+    <div class="text-center title">
+      Card Memory Game
+    </div>
+    <div class="p-16">
+      <p class="text-center">Tap on a card to flip it.</p>
+      <div class="grid10 p-16">
+        <app-game-card *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+        </app-game-card>
+      </div>
+    </div>
+  </div>
+</div>
+<app-modal *ngIf="modalOpen" (close)="onClick()" (playAgain)="restart()"></app-modal>
+
+
+
+

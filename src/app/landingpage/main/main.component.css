@@ -1,0 +1,42 @@
+
+.banner {
+  /*min-height: calc(100vh - 78px);*/
+  background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("/assets/images/frog.jpg");
+  background-position-x: center;
+  background-position-y: 45px;
+  background-size: contain;
+  /*background-size: cover;*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--main-dark-brown);
+  height: 100vh;
+  /*width:100vw;*/
+  background-color: var(--main-dark-brown);
+  position: relative;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.myMain {
+  background-color: var(--main-tan);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--main-dark-brown)
+}
+.projects {
+  margin-top : 50px;
+  padding-bottom : 50px;
+}
+
+.title{
+  border-bottom: 2px solid var(--main-dark-brown);
+  margin-bottom: 80px;
+}
+

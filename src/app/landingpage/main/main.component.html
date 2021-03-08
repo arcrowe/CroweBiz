@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="myMain">
+  <div class="container">
+    <div class="banner d-flex align-items-center justify-content-center
+            flex-column pl-3 pl-lg-5">
+      <div class="centered">
+        <div>
+          <h1 class="text-capitalize ">Welcome to CroweBiz</h1>
+        </div>
+        <div>
+          <h2 class="">Pandemic Hunkering Down Projects</h2>
+        </div>
+        <div>
+          <!--      <app-search-bar></app-search-bar>-->
+        </div>
+      </div>
+    </div>
+    <section class="projects">
+      <h2 class="title">Projects</h2>
+      <div class="row d-flex justify-content-around">
+        <app-card *ngFor="let project of projects" [project]="project"></app-card>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <!--      <app-my-paginator [images]="projects"></app-my-paginator>-->
+      </div>
+    </section>
+  </div>
+</div>
