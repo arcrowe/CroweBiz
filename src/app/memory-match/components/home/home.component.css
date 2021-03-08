@@ -6,6 +6,7 @@
 
   justify-content: center;
 }
+
 .grid2 {
   display: grid;
   grid-template-columns: repeat(2, 150px);
@@ -13,16 +14,14 @@
 
   justify-content: center;
 }
-.directions{
-}
+
 
 .grid10 {
   display: grid;
   grid-template-columns: repeat(5, 100px);
   gap: 16px;
 
-  justify-content: right;
-  padding-right: 225px;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {
@@ -30,14 +29,16 @@
     grid-template-columns: repeat(2, 150px);
   }
 }
-.bg-container{
+
+.bg-container {
   background-color: #0c3338;
+
   /*background-color: var(--mm-dark-teal);*/
 
 }
 
 .banner {
-  padding-top:80px;
+  padding-top: 100px;
   padding-bottom: 100px;
   /*min-height: calc(100vh - 78px);*/
   background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("/assets/images/lightbulb.jpg");
@@ -61,4 +62,9 @@
 
 .title {
   font-size: 3rem;
+}
+
+.gold {
+  color: var(--mm-gold);
+
 }

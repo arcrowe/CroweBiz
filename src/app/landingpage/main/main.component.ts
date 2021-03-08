@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
     title: 'Books154F',
     image: 'assets/images/Books154FImage.JPG',
     text: 'Online Bookstore ',
-    technology: 'Front: Angular - Backend: Django Rest',
+    technology: 'Angular - Django Rest',
     url: 'books154f/'
   };
   p2: Project = {
