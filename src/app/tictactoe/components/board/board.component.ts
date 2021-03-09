@@ -11,7 +11,9 @@ export class BoardComponent implements OnInit {
   player1 = true;
   message = '';
   count = 0;
-  computer = false;
+  computer = true;
+  instructions = '';
+  start = false;
   winning = [
     [0, 1, 2],
     [3, 4, 5],
@@ -34,7 +36,7 @@ export class BoardComponent implements OnInit {
     ];
   }
 
-  squareClicked_2Player(i: number): void {
+  squareClicked(i: number): void {
 
     if (!this.computer) {
 
@@ -93,11 +95,12 @@ export class BoardComponent implements OnInit {
     ];
     this.player1 = true;
     this.count = 0;
+    this.computer = false;
+    this.instructions = '';
+    this.start = false;
   }
 
   computerChoice(): any {
-    // opponent's boxes
-    const indicesX = this.squares.map((e, i) => e === 'X' ? i : '').filter(String);
 
     // # combinations that will lead to win
     const threats = [
@@ -110,16 +113,19 @@ export class BoardComponent implements OnInit {
       [[0, 4], [4, 8], [0, 8]],
       [[2, 4], [4, 6], [2, 6]],
     ];
-    // first block opponent
+    // first can it win?
+    // computer's boxes
+    const indicesO = this.squares.map((e, i) => e === 'O' ? i : '').filter(String);
     for (const threat of threats) {
       for (const combo of threat) {
-        if (combo.every(o => indicesX.includes(o))) {
-          // console.log(`threat found ${threats[i][j]}`);
-          // console.log(`threat found ${threats[i]}`);
+        if (combo.every(o => indicesO.includes(o))) {
+          // console.log(`threat found ${combo}`);
+          // console.log(`threat found ${threat}`);
           const merged = [].concat.apply([], threat);
-          const potentialSpot = [...new Set(merged.filter(e => !indicesX.includes(e)))][0];
-          console.log(` threat[0] : ${potentialSpot}`);
-          console.log(` typeof(threat[0]) : ${typeof potentialSpot}`);
+          // get rid of duplicates
+          const potentialSpot = [...new Set(merged.filter(e => !indicesO.includes(e)))][0];
+          // console.log(` threat[0] : ${potentialSpot}`);
+          // console.log(` typeof(threat[0]) : ${typeof potentialSpot}`);
           // @ts-ignore
           if (!this.squares[potentialSpot]) {
             return potentialSpot;
@@ -127,21 +133,47 @@ export class BoardComponent implements OnInit {
         }
       }
     }
-    // find a threatening square for the computer
 
 
-
-
-
-
-    // finally - pick an empty square
-    for (const i in this.squares) {
-      if (!this.squares[i]) {
-        console.log(i);
-        return parseInt(i, 10);
+    // second block opponent
+    const indicesX = this.squares.map((e, i) => e === 'X' ? i : '').filter(String);
+    for (const threat of threats) {
+      for (const combo of threat) {
+        if (combo.every(o => indicesX.includes(o))) {
+          // console.log(`threat found ${threats[i][j]}`);
+          // console.log(`threat found ${threats[i]}`);
+          const merged = [].concat.apply([], threat);
+          const potentialSpot = [...new Set(merged.filter(e => !indicesX.includes(e)))][0];
+          // console.log(` threat[0] : ${potentialSpot}`);
+          // console.log(` typeof(threat[0]) : ${typeof potentialSpot}`);
+          // @ts-ignore
+          if (!this.squares[potentialSpot]) {
+            // console.log(`pick a defensive square`);
+            return potentialSpot;
+          }
+        }
       }
     }
 
+
+    // finally - pick a random empty square
+    const empty = this.squares.map((e, i) => e === '' ? i : '').filter(String);
+    return empty[Math.floor(Math.random() * empty.length)];
+
+
+  }
+
+  playComputer(): void {
+    this.instructions = 'Please begin';
+    this.computer = true;
+    this.start = true;
+
+  }
+
+  playOpponent(): void {
+    this.instructions = 'Please begin';
+    this.computer = false;
+    this.start = true;
   }
 
 

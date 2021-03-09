@@ -1,10 +1,19 @@
 <div class="container">
+  <div class="flex">
+
+    <button class="btn btn-dark flex-item" (click)="playComputer()" >Play Computer</button>
+    <button class="btn btn-dark flex-item" (click)="playOpponent()">Play Opponent</button>
+  </div>
+  <div class="text-center">
+
+    <div *ngIf="instructions" class="instruction flex-item">{{instructions}}</div>
+  </div>
   <div class="row justify-content-center mt-5">
 
-    <div class="game">
+    <div class="game" *ngIf="start">
 
       <app-square *ngFor="let square of squares;let i = index" [square]="square"
-                  (click)="squareClicked_2Player(i)"></app-square>
+                  (click)="squareClicked(i)"></app-square>
     </div>
   </div>
 

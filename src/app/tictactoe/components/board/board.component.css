@@ -9,3 +9,24 @@ app-square {
   border: 1px gray solid;
   height: 100px;
 }
+
+button {
+  margin-top:10px;
+  color:var(--ttt-bright-red);
+}
+
+.instruction {
+  color:var(--ttt-black);
+  padding-top: 10px;
+  font-weight: bold;
+
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item + .flex-item {
+  margin-left: 10px;
+}
