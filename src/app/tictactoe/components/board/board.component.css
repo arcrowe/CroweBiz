@@ -1,0 +1,11 @@
+.game {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 0;
+  background-color: var(--ttt-muted-red);
+}
+
+app-square {
+  border: 1px gray solid;
+  height: 100px;
+}

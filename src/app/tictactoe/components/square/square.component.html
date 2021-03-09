@@ -1,0 +1,3 @@
+<button class="btn btn-outline-light"   *ngIf="!square">{{ square }}</button>
+<button class="btn btn-outline-dark"  [disabled] = "square"  *ngIf="square == 'X'">{{ square }}</button>
+<button class="btn btn-outline-danger"  [disabled] = "square"  *ngIf="square == 'O'">{{ square }}</button>
