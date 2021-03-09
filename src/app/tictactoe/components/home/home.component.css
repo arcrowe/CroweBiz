@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'SF';
+  src: url('../../../../assets/fonts/sf_chromium_24/SF Chromium 24 SC Bold Oblique.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+.title {
+  font-family: SF, sans-serif;
+  font-size: 4rem;
+  color: var(--ttt-muted-red);
+  text-align: center;
+}
+
+h1 span {
+  background-color: var(--ttt-dark-gray);
+}
 
 .grid {
   display: grid;
@@ -14,7 +29,7 @@
 }
 
 .bg-container {
-  padding-top:100px;
+  padding-top: 100px;
   /*!*background-color: var(--main-tan);*!*/
   /*!*min-height: calc(100vh - 78px);*!*/
   /*!*background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("/assets/images/tic-tac-toe.png");*!*/

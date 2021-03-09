@@ -1,1 +1,15 @@
-<p>modal works!</p>
+<div class="backdrop" (click)="onClose()"></div>
+<div class="alert-box">
+  <!--  <i class="fas fa-times close" (click)="onClose()"></i>-->
+  <div class="header text-center">
+    <h3>Game Over</h3>
+    <hr>
+  </div>
+  <div class="content text-center">
+    <p>{{message}}</p>
+  </div>
+  <hr>
+  <div class="alert-box-actions">
+    <button class="btn " (click)="onPlayAgain()">Play Again</button>
+  </div>
+</div>

@@ -3,7 +3,7 @@
   min-height: calc(100vh - 78px);
   background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("/assets/images/quietSpot.webp");
   background-position-x: center;
-  background-position-y: 78px;
+  background-position-y: 60px;
   background-size: contain;
   /*background-size: cover;*/
   background-attachment: fixed;

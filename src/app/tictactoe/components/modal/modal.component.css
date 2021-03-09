@@ -1,0 +1,43 @@
+/*@import '~semantic-ui-css/semantic.css';*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+}
+
+.alert-box {
+  position: fixed;
+  top: 30vh;
+  left: 65vw;
+  width: 30vw;
+  padding: 16px;
+  z-index: 100;
+  background-color: var(--ttt-dark-gray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .66);
+  color: var(--ttt-muted-red)
+}
+.content {
+  padding:10px;
+  margin:0;
+  font-size: 2rem;
+}
+
+.alert-box-actions {
+  text-align: right;
+}
+
+.close {
+  float:right;
+  font-size: 1.5rem;
+  color:red;
+}
+
+.btn {
+  background-color: var(--ttt-black);
+  color:var(--ttt-muted-red)
+}
+
