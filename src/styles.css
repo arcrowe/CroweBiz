@@ -60,7 +60,10 @@ input[type="search"]::-webkit-search-results-decoration {
   --mm-lighter-teal:#4ba7ae;
   --mm-darkest-brown: #645957;
 
-
+  --st-olive-green: #475340;
+  --st-pale-green:#CFDAC8;
+  --st-light-gray:#E8EAE6;
+  --st-dark-gray:#CDD0CB;
 }
 
 

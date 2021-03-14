@@ -29,6 +29,13 @@ const routes: Routes = [
       const dynamicImport = await import('./tictactoe/tictactoe.module');
       return dynamicImport.TictactoeModule;
     }
+  },
+  {
+    path: 'stock',
+    loadChildren: async () => {
+      const dynamicImport = await import('./stockticker/stockticker.module');
+      return dynamicImport.StocktickerModule;
+    }
   }
 ];
 

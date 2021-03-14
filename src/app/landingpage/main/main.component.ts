@@ -32,16 +32,16 @@ export class MainComponent implements OnInit {
   p3: Project = {
     title: 'Tic Tac Toe',
     image: 'assets/images/TicTacToeImage.JPG',
-    text: 'Yet to be converted from Python',
-    technology: 'Angular',
+    text: 'Play against computer or opponent',
+    technology: 'Angular - Converted from Tkinter/Python',
     url: 'tictactoe/'
   };
   p4: Project = {
-    title: 'Stocker Ticker',
+    title: 'Stock Ticker',
     image: 'assets/images/stockticker.jpeg',
     text: 'Yet to be converted from Python',
     technology: 'Angular, Plotly Dash Django',
-    url: ''
+    url: 'stock/'
   };
   p5: Project = {
     title: 'All Aboard',
