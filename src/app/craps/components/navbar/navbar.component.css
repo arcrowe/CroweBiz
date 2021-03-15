@@ -1,0 +1,49 @@
+/******* Navbar Colors *******/
+
+.navbar-custom {
+  background-color: #009933;
+  /*background-color: transparent;*/
+  /*padding: 0 40px;*/
+  padding: 0 40px;
+}
+
+/* Modify brand and text color */
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text{
+  color: white;
+}
+
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-active {
+  border-bottom: 0.1rem solid var(--st-pale-green);
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+#message {
+  color:yellow;
+  padding-left: 50px;
+  margin-bottom: 0;
+}
+
+.winnings {
+  padding-right:100px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .winnings {
+    padding-right: 50px;
+    margin-bottom: 0;
+  }
+}
+
+
+

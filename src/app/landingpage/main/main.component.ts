@@ -39,7 +39,7 @@ export class MainComponent implements OnInit {
   p4: Project = {
     title: 'Stock Ticker',
     image: 'assets/images/stockticker.jpeg',
-    text: 'Yet to be converted from Python',
+    text: 'Waiting for Back End to be updated',
     technology: 'Angular, Plotly Dash Django',
     url: 'stock/'
   };
@@ -50,8 +50,15 @@ export class MainComponent implements OnInit {
     technology: 'Angular, Django Rest',
     url: ''
   };
+  p6: Project = {
+    title: 'Craps Are Us',
+    image: 'assets/images/crapTable.jpg',
+    text: 'Pass Line Craps Game - Animated Dice',
+    technology: 'Angular - SVG clickable Area',
+    url: 'craps/'
+  };
 
-  projects: Project[] = [this.p1, this.p2, this.p3, this.p4,this.p5];
+  projects: Project[] = [this.p1, this.p2, this.p3, this.p4, this.p5, this.p6];
 
 
   constructor() {

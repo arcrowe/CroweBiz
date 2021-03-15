@@ -1,0 +1,9 @@
+<div class="holder">
+
+  <div class="left-die"><img *ngIf="rolling" src='{{"assets/images/craps/green_background1.gif"}}' class="img-fluid"></div>
+  <div class="right-die"><img *ngIf="rolling" src='{{"assets/images/craps/green_background2.gif"}}' class="img-fluid"></div>
+  <div class="left-die"><img *ngIf="die1 && !rolling" src='{{"assets/images/craps/"+ die1 + ".png"}}' class="img-fluid"></div>
+  <div class="right-die"><img *ngIf="die2 && !rolling" src='{{"assets/images/craps/" + die2 + ".png"}}' class="img-fluid"></div>
+</div>
+
+

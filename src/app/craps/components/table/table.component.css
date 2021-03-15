@@ -1,0 +1,195 @@
+.bg-container {
+  background-color: black;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.banner {
+  padding-top: 55px;
+}
+
+
+.img-overlay-wrap {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  /*transition: transform 150ms ease-in-out;*/
+}
+
+.img-overlay-wrap img { /* <= optional, for responsiveness */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*opacity: 0.8;*/
+  /*transform: scale(1,-1);*/
+  /*transform: translate(0,-550);*/
+}
+
+svg polygon:hover {
+  /*fill: red;*/
+  opacity: 1;
+}
+
+
+polygon {
+  /*stroke-width: 1;*/
+  /*stroke: red;*/
+  fill: none;
+  pointer-events: visible;
+}
+
+polygon:hover {
+  fill: rgba(255, 00, 00, 0.5);
+  opacity: .5;
+}
+
+/*button{*/
+/*  margin-bottom: 20px;*/
+/*}*/
+
+.mybutton {
+  cursor: pointer;
+}
+
+.mybutton:hover {
+  stroke: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.point4 {
+  position: absolute;
+  top: 50px;
+  left:255px;
+}
+.point5 {
+  position: absolute;
+  top: 50px;
+  left:340px;
+
+}
+.point6 {
+  position: absolute;
+  top: 50px;
+  left:430px;
+}
+.point8 {
+  position: absolute;
+  top: 50px;
+  left:520px;
+}
+
+.point9 {
+  position: absolute;
+  top: 50px;
+  left:610px;
+}
+.point10 {
+  position: absolute;
+  top: 50px;
+  left:700px;
+}
+
+.pass-chip {
+  position: absolute;
+  top: 412px;
+  left:180px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #over1200 {
+    display: none;
+  }
+
+  #under1200 {
+    display: block;
+  }
+
+  .left-die {
+    right: 170px;
+  }
+
+  #under700 {
+    display: none;
+  }
+  .point4 {
+    position: absolute;
+    top: 40px;
+    left:210px;
+  }
+  .point5 {
+    position: absolute;
+    top: 40px;
+    left:285px;
+
+  }
+  .point6 {
+    position: absolute;
+    top: 40px;
+    left:360px;
+  }
+  .point8 {
+    position: absolute;
+    top: 40px;
+    left:435px;
+  }
+
+  .point9 {
+    position: absolute;
+    top: 40px;
+    left:510px;
+  }
+  .point10 {
+    position: absolute;
+    top: 40px;
+    left:585px;
+  }
+  .pass-chip {
+    position: absolute;
+    top: 350px;
+    left:150px;
+    width:40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #over1200 {
+    display: block;
+  }
+
+  #under1200 {
+    display: none;
+  }
+
+  #under700 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #over1200 {
+    display: none;
+  }
+
+  #under1200 {
+    display: none;
+  }
+
+  #under700 {
+    display: block;
+    color: white;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+
+

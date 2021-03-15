@@ -36,6 +36,13 @@ const routes: Routes = [
       const dynamicImport = await import('./stockticker/stockticker.module');
       return dynamicImport.StocktickerModule;
     }
+  },
+  {
+    path: 'craps',
+    loadChildren: async () => {
+      const dynamicImport = await import('./craps/craps.module');
+      return dynamicImport.CrapsModule;
+    }
   }
 ];
 

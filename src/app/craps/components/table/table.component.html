@@ -1,0 +1,162 @@
+<app-navbar [message]="message" [winnings]="winnings"></app-navbar>
+<div class="bg-container">
+
+
+  <div class="container ">
+    <div class="banner">
+      <div class="row justify-content-center img-overlay-wrap" id="over1200">
+        <app-dice [die1]="die1" [die2]="die2" [rolling]="rolling"></app-dice>
+        <img src="assets/images/craps/craps3.png">
+        <!--     place puck on point-->
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point4" *ngIf="show4">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point5" *ngIf="show5">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point6" *ngIf="show6">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point8" *ngIf="show8">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point9" *ngIf="show9">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point10" *ngIf="show10">
+        <img src="assets/images/craps/Black%20Chip.png" alt="chp"
+             width="50" class="pass-chip" *ngIf="betplaced">
+        <svg width="1150" height="800" xmlns="http://www.w3.org/2000/svg">
+          <!--      outline player options-->
+          <g>
+            <!--            <a (click)="come()">-->
+            <!--              <polygon points="166,	425 166,	338 697,	338 697,	425"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="field()">-->
+            <!--              <polygon points="166,	336 256,	250 697,	250 697,	336"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="dont_pass()">-->
+            <!--              <polygon points="255,	247 255,	197 697,	197 697,	247"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--              <polygon points="112,	532 112,	338 163,	338 163,	568"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="dont_come()">-->
+            <!--              <polygon points="166,	568 166,	428 251,	428 251,	568"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <a (click)="pass()">
+              <polygon points="55,	480 55,	275 56, 240 57,	220 59, 200 62,	190 68,	182 80,	163 97,	147 106,	140 108,
+                    139 120,	135 133,	132 140,	130 157,	127 692,	127 692,	178 159,	178 146,	179 133,	186 119,	196 111,
+                    208 104,	221 103,	231 103,	514"
+                       transform="scale(1,-1) translate(-15,-590) "
+
+              ></polygon>
+            </a>
+            <!--            <a (click)="big6()">-->
+            <!--              <polygon points="112,	335-->
+            <!--                            114,	237-->
+            <!--                           119,	225-->
+            <!--                           124,	218-->
+            <!--                           128,	213-->
+            <!--                           207,292-->
+            <!--                           164,	335"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="big8()">-->
+            <!--              <polygon points="-->
+            <!--                           129,	209-->
+            <!--                           145,	200-->
+            <!--                           160,	197-->
+            <!--                           162, 197-->
+            <!--                           252,	197-->
+            <!--                           252,	247-->
+
+            <!--                           209,290"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="seven()">-->
+            <!--              <polygon points="805,	359 1123,	359 1123,	403 1123,	387 1120,	389 819,	389 805,	387 805,	384"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <ng-container *ngIf="betplaced">
+
+              <g transform="translate(90,490)" (click)="rollDice()" class="mybutton">
+                <rect rx="15" width="550" height="40" stroke="red" fill="red" stroke-width="10"/>
+                <svg width="550px" height="40px">
+                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
+                        style="fill:white; font-size: 2rem;">Roll Dice
+                  </text>
+                </svg>
+              </g>
+            </ng-container>
+          </g>
+        </svg>
+      </div>
+
+      <div class="row justify-content-center img-overlay-wrap" id="under1200">
+        <app-dice [die1]="die1" [die2]="die2" [rolling]="rolling"></app-dice>
+        <img src="assets/images/craps/craps3.png">
+        <!--     place puck on point-->
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point4" *ngIf="show4">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point5" *ngIf="show5">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point6" *ngIf="show6">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point8" *ngIf="show8">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point9" *ngIf="show9">
+        <img src="assets/images/craps/pucks%20ON.gif" alt="on puck" width="50" class="point10" *ngIf="show10">
+        <img src="assets/images/craps/Black%20Chip.png" alt="chp"
+             width="50" class="pass-chip" *ngIf="betplaced">
+        <!--    <div class="selected">-->
+        <svg width="1150" height="800" preserveAspectRatio="xMinYMin meet">
+          <g>
+            <!--            <a (click)="come()">-->
+            <!--              <polygon points="166,	425 166,	353 613,	353 613,	425"-->
+            <!--                       transform="scale(1,-1) translate(-43,-577)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="field()">-->
+            <!--              <polygon points="145,	378  218,306 590,	306 590,	378"-->
+            <!--                       transform="scale(1,-1) translate(-20,-605)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="dont_pass()">-->
+            <!--              <polygon points="255,	247 255,	205 628,	205 628,	247"-->
+            <!--                       transform="scale(1,-1) translate(-58,-549)"-->
+            <!--              ></polygon>-->
+            <!--              <polygon points="112,	532 112,	368 154,	368 154,	561"-->
+            <!--                       transform="scale(1,-1) translate(-34,-593)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <!--            <a (click)="dont_come()">-->
+            <!--              <polygon points="166,	568 166,	451 238,	451 238,	568"-->
+            <!--                       transform="scale(1,-1) translate(-43,-600)"-->
+            <!--              ></polygon>-->
+            <!--            </a>-->
+            <a (click)="pass()">
+              <polygon points="55,480 55,275 62,240 75,220 85,210, 96,197 108,190 135,184 157,184
+                        593,184 593,227 159,227 146,225 135,227 120,233 107,245 99,261 97,509"
+                       transform="scale(1,-1) translate(-23,-573) "
+
+              ></polygon>
+            </a>
+            <ng-container *ngIf="betplaced">
+              <g transform="translate(750,116)" (click)="rollDice()" class="mybutton">
+                <rect rx="15" width="85" height="30" stroke="green" fill="green" stroke-width="10"/>
+                <svg width="85px" height="30px">
+                  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" style="fill:white">Roll Dice
+                  </text>
+                </svg>
+              </g>
+            </ng-container>
+          </g>
+        </svg>
+      </div>
+      <div id="under700">
+        <p>Sorry this screen size is not supported.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

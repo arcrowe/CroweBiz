@@ -1,0 +1,90 @@
+.bg-container {
+  background-color: var(--st-pale-green);
+  min-height: 100vh;
+
+  /*background-color: var(--mm-dark-teal);*/
+
+}
+
+.banner {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  /*!*min-height: calc(100vh - 78px);*!*/
+  /*background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url("/assets/images/lightbulb.jpg");*/
+  /*!*background: url("/assets/images/lightbulb.jpg");*!*/
+  /*background-position-x: center;*/
+  /*background-position-y: center;*/
+  /*background-size: contain;*/
+  /*!*background-size: cover;*!*/
+  /*background-attachment: fixed;*/
+  /*background-repeat: no-repeat;*/
+  color: var(--st-olive-green);
+  /*font-size: 1.5rem;*/
+  /*min-height: 100vh;*/
+  /*min-width: 100vw;*/
+  /*!*!*width:100vw;*!*!*/
+  /*!*!*background-color: purple;*!*!*/
+  /*position: relative;*/
+  /*font-family: 'Akaya Telivigala', cursive;*/
+
+}
+.form-control {
+  background-color:  var(--st-light-gray)!important;
+}
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: var(--st-olive-green);
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: white;
+  color:var(--st-olive-green);
+}
+
+.checkbox {
+  border-color: var(--st-pale-green);
+  box-shadow: none;
+  width:20px;
+  margin-left: -18px;
+}
+
+.checkbox-label{
+  margin-left:18px;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

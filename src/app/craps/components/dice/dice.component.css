@@ -1,0 +1,68 @@
+.left-die {
+  position: absolute;
+  top: 35px;
+  right: 216px;
+
+}
+
+.right-die {
+  position: absolute;
+  top: 35px;
+  right: 86px;
+}
+
+#die-1{
+  position: absolute;
+  top: 35px;
+  right: 216px;
+
+}
+
+#die-2 {
+  position: absolute;
+  top: 35px;
+  right: 86px;
+}
+
+
+.message{
+  position: absolute;
+  top:500px;
+  left: 50px;
+  color:blue;
+  font-size: 2rem;
+}
+
+img {
+  width: 80px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .left-die {
+    right: 180px;
+    top: 30px;
+  }
+  .right-die{
+    top: 30px;
+  }
+
+  img {
+    width: 70px;
+  }
+
+  .message {
+    top:420px;
+    right: 680px;
+  }
+  .holder {
+    margin-top: 40px;
+  }
+
+  /*.right-die {*/
+  /*  width: 200px;*/
+  /*}*/
+
+}
