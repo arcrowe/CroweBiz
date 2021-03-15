@@ -20,7 +20,9 @@
     "@angular/platform-browser-dynamic": "~11.2.4",
     "@angular/router": "~11.2.4",
     "@fortawesome/fontawesome-free": "^5.12.1",
+    "angular-plotly.js": "^3.0.0",
     "bootstrap": "^4.4.1",
+    "plotly.js": "^1.58.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

@@ -1,7 +1,7 @@
 /******* Navbar Colors *******/
 
 .navbar-custom {
-  background-color: var(--ttt-black);
+  background-color: var(--st-olive-green);
   /*background-color: transparent;*/
   /*padding: 0 40px;*/
   padding: 0 40px;
@@ -10,14 +10,14 @@
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-  color: var(--ttt-bright-red);
+  color: var(--st-pale-green);
 }
 
 .navbar-toggler {
   outline: none !important;
   /*border: none;*/
   font-size: 2.2rem;
-  color: var(--ttt-bright-red) !important;
+  color: var(--st-pale-green) !important;
   background-color: transparent;
   /*background-image: none;*/
   border: 1px solid transparent;
@@ -26,7 +26,7 @@
   font-size: 1.2rem;
 }
 .nav-active {
-  border-bottom: 0.1rem solid var(--ttt-bright-red);
+  border-bottom: 0.1rem solid var(--st-pale-green);
 }
 .nav-link:hover{
   color:white !important;
@@ -35,3 +35,4 @@
 .navbar-toggler .i {
   background-color: #fff;
 }
+
