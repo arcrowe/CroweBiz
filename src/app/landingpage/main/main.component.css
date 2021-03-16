@@ -1,7 +1,8 @@
 
 .banner {
   /*min-height: calc(100vh - 78px);*/
-  background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("/assets/images/frog.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+  url("/assets/images/landingPage/frog.jpg");
   background-position-x: center;
   background-position-y: 45px;
   background-size: contain;

@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Book} from '../../models/Book';
 import {BooksService} from '../../services/books.service';
+import {Special} from '../../models/Special';
 
 @Component({
   selector: 'app-carousel',
@@ -9,9 +10,8 @@ import {BooksService} from '../../services/books.service';
 })
 export class CarouselComponent implements OnInit {
   books: Book[];
-  @Input() title;
-  @Input() category;
-  @Input() logo;
+
+  @Input() special: Special;
 
 
   constructor(private bookService: BooksService) {
@@ -21,18 +21,14 @@ export class CarouselComponent implements OnInit {
     // this.bookService.getBooks().subscribe(
     //   data => {
     //     this.books = data;
-    //     this.books = this.books.splice(0, 15);
+    //     // this.books = this.books.splice(0, 15);
     //   }
     // );
-    this.bookService.getSpecialBooks(this.category).subscribe(
+    this.bookService.getSpecialBooks(this.special.id.toString()).subscribe(
       data => {
         this.books = data;
       }
     );
-  }
-
-  viewAll(): void {
-    console.log('i was clicked');
   }
 }
 

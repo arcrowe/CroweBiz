@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!--<app-navbar></app-navbar>-->
 <div class="banner d-flex align-items-center justify-content-center
             flex-column pl-3 pl-lg-5">
   <div class="centered">
@@ -16,12 +16,8 @@
 <section class="special">
   <div class="container">
 
-    <app-carousel title="Lisa's Picks" category="LisaPicks" logo="assets/images/images-removebg-preview.png"></app-carousel>
-    <app-carousel title="Booker Prize Winners" category="Booker" logo="assets/images/Man+Booker+Prize+Logo.png"></app-carousel>
-<!--    <app-carousel title="Oprah Book Club" category="Oprah" logo="assets/images/Oprah's_Book_Club_2.0.png"></app-carousel>-->
-    <app-carousel title="National Book Award for Fiction" category="NationalFiction"
-                  logo="assets/images/nba-winner-sticker.png"></app-carousel>
-<!--    &lt;!&ndash;    <app-booklist></app-booklist>&ndash;&gt;-->
+    <app-carousel [special]="special" *ngFor="let special of specials"></app-carousel>
+
   </div>
 </section>
 <app-footer></app-footer>

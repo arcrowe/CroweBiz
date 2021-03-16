@@ -1,0 +1,44 @@
+<div class="banner" style="padding-top:100px; text-align: center" >
+<h1>{{type}}</h1>
+<div class="booklist">
+  <div class="booklist-book" *ngFor="let book of books">
+    <div class="cover-wrapper">
+      <a class="cover"
+         href="#">
+        <div class="product-image">
+          <img class="w-full ls-is-cached lazyloaded" width="647" height="1000" src="{{book.cover}}">
+<!--               data-src="https://images-production.bookshop.org/spree/images/attachments/13422576/product/9781642595253.jpg"-->
+
+        </div>
+      </a>
+    </div>
+    <h2 class="font-serif-bold lg:pt-4 leading-tight">
+      <a
+        href="#">{{book.title}}</a>
+    </h2>
+    <h3 class="text-s">{{book.authors}}</h3>
+    <div class="pb-4 self-start text-s">
+<!--      <div class="line-through mr-2 lg:mr-0 text-primary">$16.95</div>-->
+      <div class="font-sans-bold">${{book.price}}</div>
+    </div>
+    <form class="pt-4 col-span-2 lg:col-span-1 lg:mt-auto lg:pt-0"
+          accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓">
+<!--      <input type="hidden"-->
+<!--             name="authenticity_token"-->
+<!--             value="q9U27L35C7s8MPDfiLn5NjzaF+WKIHw9EKH92d/WDKIC1QeJXuSaLMym1DAvNYKHMZ+xoND6y3jBiv/eILZKrg==">-->
+<!--      <a class="button outline in-cart-button inline-flex w-full hidden" href="#">-->
+<!--        <img class="mr-2"-->
+<!--             src="">-->
+<!--        in cart-->
+<!--      </a>-->
+<!--      <button class="button primary inline-flex w-full " name="button" value="cart" type="submit">-->
+<!--        <img class="mr-2"-->
+<!--             src="/assets/ic_cart_light-b26a46b06b6ae40a9499157d18cb2eba8f8d81b0de5637f93ef851ea54ceae4c.svg">-->
+<!--        add to cart-->
+<!--      </button>-->
+<!--      <input type="hidden" value="20162077" name="variant_id">-->
+    </form>
+  </div>
+
+</div>
+</div>

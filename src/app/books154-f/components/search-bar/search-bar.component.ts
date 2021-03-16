@@ -1,5 +1,7 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 import {BooksService} from '../../services/books.service';
+import {of} from 'rxjs';
+import {delay, tap} from 'rxjs/operators';
 
 
 @Component({
@@ -15,9 +17,9 @@ export class SearchBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(value: string) {
+  onSubmit(value: string): void {
     value = 'robb';
-    console.log(`inside onsubmit ${value}`);
     this.bookService.getSearchBooks(value);
+
   }
 }

@@ -7,11 +7,13 @@ import {FooterComponent} from './components/footer/footer.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {CarouselComponent} from './components/carousel/carousel.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { BooklistComponent } from './components/booklist/booklist.component';
+import { BaseComponent } from './components/base/base.component';
 // import {BooksService} from './services/books.service';
 
 
 @NgModule({
-  declarations: [HomeComponent, FooterComponent, NavbarComponent, CarouselComponent, SearchBarComponent],
+  declarations: [HomeComponent, FooterComponent, NavbarComponent, CarouselComponent, SearchBarComponent, BooklistComponent, BaseComponent],
   imports: [
     CommonModule,
     Books154FRoutingModule
