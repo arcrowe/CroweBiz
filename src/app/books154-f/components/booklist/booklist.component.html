@@ -1,37 +1,36 @@
 <div class="bg-container">
+  <div class="container" style="padding-top:100px; padding-bottom: 50px;">
+    <div class="booklist" *ngIf="books.length!=0; else elseBlock">
+      <div class="booklist-book" *ngFor="let book of books">
+        <div class="cover-wrapper">
+          <a class="cover"
+             [routerLink]="['/books154f/book/',book.id]">
+            <div class="product-image">
+              <img class="w-full ls-is-cached lazyloaded" width="647" height="1000" src="{{book.cover}}">
 
+            </div>
+          </a>
+        </div>
+        <h2 class="font-serif-bold lg:pt-4 leading-tight">
+          <a
+            href="#">{{book.title}} <span *ngIf="book.subtitle">: {{book.subtitle}}</span></a>
+        </h2>
+        <h3 class="text-s">{{book.authors}}</h3>
+        <div class="pb-4 self-start text-s">
+          <!--      <div class="line-through mr-2 lg:mr-0 text-primary">$16.95</div>-->
+          <div class="font-sans-bold">${{book.price}}</div>
+        </div>
 
-<div class="container" style="padding-top:100px; padding-bottom: 50px;">
-  <div class="booklist">
-    <div class="booklist-book" *ngFor="let book of books">
-      <div class="cover-wrapper">
-        <a class="cover"
-           [routerLink]="['/books154f/book/',book.id]">
-          <div class="product-image">
-            <img class="w-full ls-is-cached lazyloaded" width="647" height="1000" src="{{book.cover}}">
-            <!--               data-src="https://images-production.bookshop.org/spree/images/attachments/13422576/product/9781642595253.jpg"-->
+        <button class="button primary inline-flex w-full " name="button" value="cart" type="submit">
+          <i class="fas fa-shopping-cart" style="padding-right:10px"></i>
+          add to cart
+        </button>
 
-          </div>
-        </a>
       </div>
-      <h2 class="font-serif-bold lg:pt-4 leading-tight">
-        <a
-          href="#">{{book.title}} <span *ngIf="book.subtitle">: {{book.subtitle}}</span></a>
-      </h2>
-      <h3 class="text-s">{{book.authors}}</h3>
-      <div class="pb-4 self-start text-s">
-        <!--      <div class="line-through mr-2 lg:mr-0 text-primary">$16.95</div>-->
-        <div class="font-sans-bold">${{book.price}}</div>
-      </div>
-
-      <button class="button primary inline-flex w-full " name="button" value="cart" type="submit">
-        <i class="fas fa-shopping-cart" style="padding-right:10px"></i>
-        add to cart
-      </button>
-
     </div>
-
+    <ng-template #elseBlock>
+      <h1>Sorry - no matches found</h1>
+    </ng-template>
   </div>
-</div>
 </div>
 

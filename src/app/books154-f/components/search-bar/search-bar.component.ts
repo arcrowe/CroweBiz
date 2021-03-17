@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, DoCheck, OnInit} from '@angular/core';
 
 
 @Component({
@@ -15,6 +15,8 @@ export class SearchBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
   clear(): void {
     this.keywords = '';

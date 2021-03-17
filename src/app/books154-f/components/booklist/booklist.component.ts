@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {AfterViewInit, Component, DoCheck, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {BooksService} from '../../services/books.service';
 import {Book} from '../../models/Book';
@@ -19,15 +19,24 @@ export class BooklistComponent implements OnInit {
 
   }
 
+
   ngOnInit(): void {
+    this.route.paramMap.subscribe(() => {
+      this.listBooks();
+    });
+  }
 
-    this.keywords = this.route.snapshot.paramMap.get('keywords');
-    if (this.keywords) {
+  listBooks(): void {
 
+    const hasKeyword = this.route.snapshot.paramMap.has('keywords');
+    if (hasKeyword) {
+
+      this.keywords = this.route.snapshot.paramMap.get('keywords');
       this.bookService.getSearchBooks(this.keywords).subscribe(
         data => {
           this.books = data;
           this.keywords = '';
+
         }
       );
 
