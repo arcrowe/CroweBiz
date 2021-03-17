@@ -1,0 +1,63 @@
+<div class="bg-container">
+  <div class="container">
+
+
+    <div class="measure px-4 lg:px-0 py-4 lg:py-8 grid grid-cols-1 gap-4 lg:gap-12 lg:grid-cols-1-2">
+      <div class="lg:justify-self-end hidden lg:block">
+        <div id="main-image" class="mb-8 w-full">
+          <div class="relative shadow-book lg:w-book-detail-image w-2/3 mx-auto lg:mr-0">
+            <a data-lightbox="image" class="block w-full"
+               href="#">
+              <img class="w-full" itemprop="image"
+                   src="{{book.cover}}">
+            </a>
+            <div class="absolute book-cover-shadow inset-0 pointer-events-none"></div>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="mb-4">
+          <h1 class="h1 leading-tight mb-2" itemprop="name">{{book.title}}</h1>
+          <div class="font-sans-medium text-gray text-sm">
+        <span class="comma-after-except-last">
+            <a class="text-secondary" href="#">
+              {{book.authors}}</a>(Author)
+        </span>
+          </div>
+        </div>
+        <div itemprop="description" class="mb-8 title-description show-links" data-hook="description">
+          <h3 class="h3 mb-2">Description</h3>
+          <p>{{book.long_description}}</p>
+        </div>
+        <div class="mb-8">
+          <h3 class="h3 mb-2">Product Details</h3>
+          <div class="grid grid-cols-auto-1 col-gap-2 row-gap-1 items-center leading-none">
+            <div class="font-sans-medium text-right text-s text-gray">Price</div>
+            <b>{{book.price}}</b>
+            <meta itemprop="sku" content="9780593318171">
+            <div class="font-sans-medium text-right text-s text-gray">Publisher</div>
+            <div>{{book.publisher}}</div>
+            <div class="font-sans-medium text-right text-s text-gray">Publish Date</div>
+            <div>{{book.publishedDate}}</div>
+            <div class="font-sans-medium text-right text-s text-gray">Pages</div>
+            <div>{{book.pageCount}}</div>
+            <div class="font-sans-medium text-right text-s text-gray">Language</div>
+            <div>{{book.language}}</div>
+            <div class="font-sans-medium text-right text-s text-gray">Type</div>
+            <div>{{book.format}}</div>
+            <div class="font-sans-medium text-right text-s text-gray">ISBN</div>
+            <div>{{book.isbn}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+
+    <button class="button primary w-50" name="button" value="cart" type="submit">
+      <i class="fas fa-shopping-cart" style="padding-right:10px"></i>
+      add to cart
+    </button>
+  </div>
+</div>
