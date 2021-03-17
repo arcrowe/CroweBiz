@@ -57,13 +57,24 @@ input[type="search"]::-webkit-search-results-decoration {
   --mm-dark-teal: #0d505d;
   --mm-light-teal: #1c8996;
   --mm-gold: #bca16a;
-  --mm-lighter-teal:#4ba7ae;
+  --mm-lighter-teal: #4ba7ae;
   --mm-darkest-brown: #645957;
 
   --st-olive-green: #475340;
-  --st-pale-green:#CFDAC8;
-  --st-light-gray:#E8EAE6;
-  --st-dark-gray:#CDD0CB;
+  --st-pale-green: #CFDAC8;
+  --st-light-gray: #E8EAE6;
+  --st-dark-gray: #CDD0CB;
+
+  --earth-deep-blue: #0e0d39;
+  --earth-deep-blue2: #21264c;
+  --earth-medium-blue: #505684;
+  --earth-royal-blue:#364297;
+  --earth-light-blue: #8a95ac;
+  --earth-lightest-blue: #b1b4c3;
+  --earth-dark-green: #333e24;
+  --earth-medium-green: #60614e;
+  --earth-brown:#946450;
+  --earth-taupe:#977d59;
 }
 
 

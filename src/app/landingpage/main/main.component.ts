@@ -20,7 +20,7 @@ export class MainComponent implements OnInit {
     image: 'assets/images/landingPage/Books154FImage.JPG',
     text: 'Online Bookstore ',
     technology: 'Angular - Django Rest',
-    url: 'books154f/'
+    url: 'books154f/home'
   };
   p2: Project = {
     title: 'Memory Match',
@@ -43,7 +43,7 @@ export class MainComponent implements OnInit {
     technology: 'Angular, Plotly Dash Django',
     url: 'stock/'
   };
-  p5: Project = {
+  p7: Project = {
     title: 'All Aboard',
     image: 'assets/images/landingPage/traingroup1.png',
     text: 'Yet to be converted from Flask',
@@ -56,6 +56,13 @@ export class MainComponent implements OnInit {
     text: 'Pass Line Craps Game - Animated Dice',
     technology: 'Angular - SVG clickable Area',
     url: 'craps/'
+  };
+  p5: Project = {
+    title: 'Earth Story',
+    image: 'assets/images/landingPage/EarthStory.JPG',
+    text: 'Climate Change - Extinction',
+    technology: 'Angular',
+    url: 'earth/home'
   };
 
   projects: Project[] = [this.p1, this.p2, this.p3, this.p4, this.p5, this.p6];

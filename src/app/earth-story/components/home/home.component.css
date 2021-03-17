@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+.title {
+  font-family: Lato, sans-serif;
+  font-size: 4rem;
+  color: var(--ttt-muted-red);
+  text-align: center;
+}
+
+.bg-container{
+  padding-top: 50px;
+  /*background-color: var(--earth-lightest-blue);*/
+  background-color: black;
+  height:100vh;
+  width:100vw;
+}
+
+img {
+  height:75vh;
+}
+

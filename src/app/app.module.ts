@@ -8,11 +8,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import * as PlotlyJS from 'plotly.js/dist/plotly.js';
 import {PlotlyModule} from 'angular-plotly.js';
 
+
 PlotlyModule.plotlyjs = PlotlyJS;
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,

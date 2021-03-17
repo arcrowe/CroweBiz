@@ -43,6 +43,13 @@ const routes: Routes = [
       const dynamicImport = await import('./craps/craps.module');
       return dynamicImport.CrapsModule;
     }
+  },
+  {
+    path: 'earth',
+    loadChildren: async () => {
+      const dynamicImport = await import('./earth-story/earth-story.module');
+      return dynamicImport.EarthStoryModule;
+    }
   }
 ];
 
