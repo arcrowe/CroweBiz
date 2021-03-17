@@ -1,9 +1,11 @@
-<div class="bg-callout mx-auto">
+<div class=" mx-auto">
   <form class="nav-search flex-1 ">
     <div class="bg-white rounded-full flex py-1_5 pl-4 pr-3 mt-2 shadow-sm">
-      <input type="search" name="keywords" id="keywords" value="" placeholder="Search" #keywords>
-      <button type="submit" class="icon-search" (click)="onSubmit(keywords.value)"><i class="icon-search fas fa-search"></i></button>
+<!--      <input type="search" name="keywords" id="keywords" value="" placeholder="Author or Title" #keywords>-->
+      <input type="text" name="keywords" [(ngModel)]="keywords" value="" placeholder="Author or Title" >
+      <button class="icon-search" [routerLink]="['/books154f/booklist/search',keywords]"
+      (click)="clear()">
+<i class="icon-search fas fa-search"></i></button>
     </div>
   </form>
 </div>
-

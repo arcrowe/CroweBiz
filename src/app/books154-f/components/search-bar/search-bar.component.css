@@ -61,7 +61,9 @@ form.nav-search {
 
 form.nav-search input {
   background-color: transparent;
-  width: calc(100% - 22px)
+  width: calc(100% - 22px);
+  outline:none !important;
+  border:none !important;
 }
 
 form.nav-search input::placeholder {
@@ -79,7 +81,9 @@ form.nav-search button {
 }
 
 form.search-form input {
-  background-color: transparent
+  background-color: transparent;
+  outline:none !important;
+  border:none !important;
 }
 
 form.search-form button {
@@ -90,7 +94,12 @@ form.search-form button {
   height: 40px;
   width: 40px;
   padding: 0;
+  outline:none;
+  border:none;
 }
 .icon-search{
-  color:var(--color-dark-red);
+  color:var(--154F-dark-red);
+  outline:none !important;
+  border:none !important;
 }
+

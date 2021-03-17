@@ -6,17 +6,17 @@
     </a> <a class="booklist-title ml-3 text-left flex-1 break-words overflow-hidden mr-2"
             href="#">{{special.type}}</a>
     <a class="button primary mt-2 w-full lg:mt-0 lg:w-auto"
-       [routerLink]="['/books154f/booklist',special.id,special.type]">VIEW LIST ({{books.length}} BOOKS)</a>
+       [routerLink]="['/books154f/booklist/special',special.id,special.type]">VIEW LIST ({{books.length}} BOOKS)</a>
   </div>
 
   <div class=" relative">
     <div class="flex overflow-scroll-x" style="scroll-snap-type: x mandatory">
-      <a *ngFor="let book of books" class="cover my-4 mr-2" style="scroll-snap-align: start" href="#">
+      <a *ngFor="let book of books" class="cover my-4 mr-2" style="scroll-snap-align: start" [routerLink]="['/books154f/book/',book.id]">
         <div class="product-image">
           <img style="height: 14rem" class="h-24 lg:h-48 w-auto" width="636" height="1000" src="{{book.cover}}">
         </div>
       </a>
-      <a class="my-4" [routerLink]="['/books154f/booklist',special.id,special.type]">
+      <a class="my-4" [routerLink]="['/books154f/booklist/special',special.id,special.type]">
         <div class="bg-primary flex items-center rounded h-full p-6 font-sans-bold text-white">
           <h1 class="text-center w-full">VIEW ALL {{books.length}} BOOKS</h1>
         </div>

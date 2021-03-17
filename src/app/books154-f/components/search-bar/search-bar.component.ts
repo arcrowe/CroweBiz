@@ -1,7 +1,4 @@
-import {Component, OnInit, Output, EventEmitter} from '@angular/core';
-import {BooksService} from '../../services/books.service';
-import {of} from 'rxjs';
-import {delay, tap} from 'rxjs/operators';
+import {Component, OnInit} from '@angular/core';
 
 
 @Component({
@@ -10,16 +7,16 @@ import {delay, tap} from 'rxjs/operators';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
+  keywords: string;
 
-  constructor(private bookService: BooksService) {
+
+  constructor() {
   }
 
   ngOnInit(): void {
   }
 
-  onSubmit(value: string): void {
-    value = 'robb';
-    this.bookService.getSearchBooks(value);
-
+  clear(): void {
+    this.keywords = '';
   }
 }
